@@ -1,55 +1,32 @@
+/* style.css */
+
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
   text-align: center;
   padding: 40px;
   margin: 0;
-  animation: fadeIn 1s ease-in;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
 }
 
 h2 {
   color: #333;
   margin-bottom: 20px;
-  font-size: 2rem;
-  text-shadow: 1px 1px 2px #ccc;
 }
 
 input[type="file"] {
   margin: 20px 0;
   padding: 10px;
   font-size: 16px;
-  border: 2px solid #0078D7;
-  border-radius: 8px;
-  background-color: #fff;
-  transition: box-shadow 0.3s ease;
-}
-
-input[type="file"]:hover {
-  box-shadow: 0 0 10px rgba(0, 120, 215, 0.5);
 }
 
 button {
-  padding: 12px 24px;
+  padding: 10px 20px;
   font-size: 16px;
-  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  background-color: #0078D7;
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 5px;
   cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-  0% { box-shadow: 0 0 0px rgba(106, 17, 203, 0.7); }
-  50% { box-shadow: 0 0 20px rgba(106, 17, 203, 1); }
-  100% { box-shadow: 0 0 0px rgba(106, 17, 203, 0.7); }
 }
 
 button:hover {
@@ -61,26 +38,13 @@ button:hover {
   max-width: 300px;
   max-height: 300px;
   border: 2px solid #ccc;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  animation: glow 3s infinite;
-}
-
-@keyframes glow {
-  0% { box-shadow: 0 0 5px #00ffff; }
-  50% { box-shadow: 0 0 20px #00ffff; }
-  100% { box-shadow: 0 0 5px #00ffff; }
+  border-radius: 5px;
 }
 
 #result {
   margin-top: 20px;
   font-size: 18px;
-  color: #333;
-  background-color: rgba(255, 255, 255, 0.6);
-  padding: 10px;
-  border-radius: 8px;
-  display: inline-block;
-  animation: fadeIn 1s ease-in;
+  color: #555;
 }
 
 #colorSwatch {
@@ -89,10 +53,4 @@ button:hover {
   height: 100px;
   border: 2px solid #333;
   border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease;
-}
-
-#colorSwatch:hover {
-  transform: scale(1.1);
 }
